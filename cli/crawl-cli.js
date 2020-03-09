@@ -141,7 +141,7 @@ async function run(inputUrls, outputPath, verbose, logPath, numberOfCrawlers, da
     const endTime = new Date();
 
     log(chalk.cyan(`Finish time: ${endTime.toUTCString()}`));
-    log(chalk.cyan(`Sucessful crawls: ${successes}/${urls.length}`));
+    log(chalk.cyan(`Successful crawls: ${successes}/${urls.length}`));
     log(chalk.cyan(`Failed crawls: ${failures}/${urls.length}`));
 
     createMetadataFile(outputPath, {
